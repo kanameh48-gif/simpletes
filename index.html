@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Design Para Carrossel - Classical Art Exhibition</title>
+
+  <!-- Google Fonts: Serif Klasik & Sans-Serif Modern -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;1,400;1,600;1,700&family=Playfair+Display:ital,wght@0,600;0,700;1,400;1,600;1,700&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Indikator Navigasi Melayang di Sebelah Kanan (Khusus Desktop) -->
+  <aside class="desktop-side-nav" id="sideNav">
+    <div class="nav-track">
+      <a href="#chapter-0" class="nav-dot active" data-title="Cover"><span>01</span></a>
+      <a href="#chapter-1" class="nav-dot" data-title="Poesia é som"><span>02</span></a>
+      <a href="#chapter-2" class="nav-dot" data-title="O Ritmo"><span>03</span></a>
+      <a href="#chapter-3" class="nav-dot" data-title="Sentimentos"><span>04</span></a>
+      <a href="#chapter-4" class="nav-dot" data-title="Música"><span>05</span></a>
+      <a href="#chapter-5" class="nav-dot" data-title="A Fogueira"><span>06</span></a>
+      <a href="#chapter-6" class="nav-dot" data-title="Humano"><span>07</span></a>
+      <a href="#chapter-7" class="nav-dot" data-title="Conclusão"><span>08</span></a>
+    </div>
+  </aside>
+
+  <!-- HERO SECTION UTAMA (FULL SCREEN DESKTOP) -->
+  <header class="hero-section" id="hero">
+    <div class="hero-bg-overlay"></div>
+    <img src="gambar/hero-bg.jpg" alt="Latar Belakang Klasik" class="hero-bg-img" onerror="this.style.display='none'">
+    
+    <div class="hero-content">
+      <span class="badge-tag">Classical Art & Poetry Exhibition</span>
+      <h1 class="main-title">
+        Design Para<br>
+        <span class="italic-title">Carrossel</span>
+      </h1>
+      <p class="subtitle">Eksplorasi estetika puisi, tipografi, dan seni lukisan Barok dalam format editorial vertikal.</p>
+      
+      <!-- Petunjuk Gulir ke Bawah -->
+      <a href="#chapter-0" class="scroll-cue">
+        <span>Gulir ke bawah</span>
+        <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none">
+          <polyline points="6 9 12 15 18 9"></polyline>
+        </svg>
+      </a>
+    </div>
+  </header>
+
+  <!-- DAFTAR KARTU VERTIKAL (MENURUN KE BAWAH) -->
+  <main class="editorial-container">
+
+    <!-- BAB 1: COVER -->
+    <section class="story-section" id="chapter-0">
+      <div class="section-number">01 / 08</div>
+      <article class="desktop-card">
+        <div class="card-art-box">
+          <div class="slide-bg-gradient slide-bg-1"></div>
+          <img src="gambar/slide1-portrait.jpg" alt="Pria dengan Pipa" class="card-bg-img" onerror="this.style.display='none'">
+        </div>
+        <div class="card-text-box bottom-align">
+          <span class="account-tag">@matheusharaujo</span>
+          <p class="small-caps">COMO LER</p>
+          <h2 class="card-big-title">poesia</h2>
+          <div class="gold-divider"></div>
+        </div>
+      </article>
+    </section>
+
+    <!-- BAB 2: POESIA E SOM -->
+    <section class="story-section" id="chapter-1">
+      <div class="section-number">02 / 08</div>
+      <article class="desktop-card reverse-layout">
+        <div class="card-art-box">
+          <div class="slide-bg-gradient slide-bg-2"></div>
+          <img src="gambar/slide2-bg.jpg" alt="Latar Harpa" class="card-bg-img" onerror="this.style.display='none'">
+        </div>
+        <div class="card-text-box center-align">
+          <h2 class="card-heading-serif">Poesia<br><em>é som.</em></h2>
+          <div class="gold-divider"></div>
+          <p class="card-text">Os primeiros poemas eram sempre cantados ou acompanhados por músicas.</p>
+        </div>
+      </article>
+    </section>
+
+    <!-- BAB 3: PATUNG APOLLO & RITME -->
+    <section class="story-section" id="chapter-2">
+      <div class="section-number">03 / 08</div>
+      <article class="desktop-card">
+        <div class="card-art-box">
+          <div class="slide-bg-gradient slide-bg-3"></div>
+          <img src="gambar/slide3-statue.png" alt="Patung Apollo" class="card-floating-img" onerror="this.style.display='none'">
+        </div>
+        <div class="card-text-box center-align">
+          <blockquote class="card-quote">
+            "Escolha um bom livro de sonetos e comece a ler vagarosamente, em voz alta, tentando encontrar o ritmo do texto."
+          </blockquote>
+          <div class="gold-divider"></div>
+        </div>
+      </article>
+    </section>
+
+    <!-- BAB 4: BUKU TERBUKA -->
+    <section class="story-section" id="chapter-3">
+      <div class="section-number">04 / 08</div>
+      <article class="desktop-card reverse-layout">
+        <div class="card-art-box">
+          <div class="slide-bg-gradient slide-bg-4"></div>
+          <img src="gambar/slide4-buku.jpg" alt="Buku Terbuka" class="card-bg-img" onerror="this.style.display='none'">
+        </div>
+        <div class="card-text-box center-align">
+          <blockquote class="card-quote">
+            "Poemas líricos, muitas vezes, não vão contar histórias. Vão falar de sentimentos."
+          </blockquote>
+          <div class="gold-divider"></div>
+        </div>
+      </article>
+    </section>
+
+    <!-- BAB 5: PEMAIN LUTE -->
+    <section class="story-section" id="chapter-4">
+      <div class="section-number">05 / 08</div>
+      <article class="desktop-card">
+        <div class="card-art-box">
+          <div class="slide-bg-gradient slide-bg-5"></div>
+          <img src="gambar/slide5-lute.jpg" alt="Pemain Lute" class="card-bg-img" onerror="this.style.display='none'">
+        </div>
+        <div class="card-text-box center-align">
+          <div class="highlight-box">
+            <p class="highlight-text">São estes sentimentos que você deve captar e entendê-los como seus.</p>
+          </div>
+          <div class="gold-divider"></div>
+        </div>
+      </article>
+    </section>
+
+    <!-- BAB 6: API UNGGUN -->
+    <section class="story-section" id="chapter-5">
+      <div class="section-number">06 / 08</div>
+      <article class="desktop-card reverse-layout">
+        <div class="card-art-box">
+          <div class="slide-bg-gradient slide-bg-6"></div>
+          <img src="gambar/slide6-api.jpg" alt="Api Unggun Klasik" class="card-bg-img" onerror="this.style.display='none'">
+        </div>
+        <div class="card-text-box center-align">
+          <p class="card-text-narrative">
+            <strong>O homem nasce quando nasce a poesia.</strong>
+            Quando as primeiras histórias foram contadas nas cavernas, ao redor da fogueira.
+          </p>
+          <div class="gold-divider"></div>
+        </div>
+      </article>
+    </section>
+
+    <!-- BAB 7: KEHANGATAN MANUSIA -->
+    <section class="story-section" id="chapter-6">
+      <div class="section-number">07 / 08</div>
+      <article class="desktop-card">
+        <div class="card-art-box">
+          <div class="slide-bg-gradient slide-bg-7"></div>
+          <img src="gambar/slide7-pelukan.jpg" alt="Lukisan Kehangatan" class="card-bg-img" onerror="this.style.display='none'">
+        </div>
+        <div class="card-text-box bottom-align">
+          <p class="card-callout">
+            Leia poesia para se tornar cada vez mais
+            <span class="humano-serif">humano.</span>
+          </p>
+          <div class="gold-divider"></div>
+        </div>
+      </article>
+    </section>
+
+    <!-- BAB 8: PENUTUP / CUPID -->
+    <section class="story-section" id="chapter-7">
+      <div class="section-number">08 / 08</div>
+      <article class="desktop-card reverse-layout">
+        <div class="card-art-box">
+          <div class="slide-bg-gradient slide-bg-8"></div>
+          <img src="gambar/slide8-cupid.png" alt="Cupid Klasik" class="card-floating-img cupid-desktop" onerror="this.style.display='none'">
+        </div>
+        <div class="card-text-box center-align">
+          <h2 class="card-heading-serif">Salve este<br><em>post para</em><br>ler depois.</h2>
+          <span class="account-tag">@matheusharaujo</span>
+          <div class="gold-divider"></div>
+        </div>
+      </article>
+    </section>
+
+  </main>
+
+  <!-- BAGIAN FOOTER PENUTUP -->
+  <footer class="footer-section">
+    <div class="footer-inner">
+      <h2 class="footer-title">Obrigado!</h2>
+      <a href="https://instagram.com/cai_joaocosta" target="_blank" rel="noopener noreferrer" class="instagram-handle">
+        <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none">
+          <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+          <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+          <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+        </svg>
+        Instagram: @cai_joaocosta
+      </a>
+      <p class="copyright">Desain website terinspirasi dari karya seni Barok & Carrossel Instagram.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
